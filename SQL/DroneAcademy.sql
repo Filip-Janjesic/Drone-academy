@@ -1,5 +1,5 @@
 --Priprema za produkciju
- --Ovo za produkciju ne treba
+ --Ovo za produkciju ne treb
 use master;
 go
 drop database if exists droneacademy;
