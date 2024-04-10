@@ -1,15 +1,14 @@
-ï»¿
- --Priprema za produkciju
+--Priprema za produkciju
  --Ovo za produkciju ne treba
---use master;
---go
---drop database if exists droneacademy;
---go
---create database droneacademy;
---go
---alter database droneacademy collate Croatian_CI_AS;
---go
---use droneacademy;
+use master;
+go
+drop database if exists droneacademy;
+go
+create database droneacademy;
+go
+alter database droneacademy collate Croatian_CI_AS;
+go
+use droneacademy;
 
 ---- Ovo za produkciju treba
 --SELECT name, collation_name FROM sys.databases;
@@ -31,7 +30,7 @@ email varchar(50) not null,
 lozinka varchar(200) not null
 );
 
--- Lozinka droneacademy generirana pomoÄ‡u https://bcrypt-generator.com/
+-- Lozinka droneacademy generirana pomoæu https://bcrypt-generator.com/
 insert into operateri values ('droneacademy@droneacademy.hr',
 '$2a$12$u9OiBM0twMXEwIm29KWSieOBGX7Ea.feXKBOBKZI2g.L/VhW3LJSa');
 
@@ -102,7 +101,7 @@ alter table tecajevioznake add foreign key (tecaj) references tecajevi(sifra);
 alter table tecajevioznake add foreign key (oznaka) references oznake(sifra);
 -- 1
 insert into tecajevi (naziv,brojsati,cijena,upisnina,verificiran)
-values ('Infracrveni temeljni teÄaj',225,1325.85,null,1);
+values ('Infracrveni temeljni teèaj',225,1325.85,null,1);
 insert into tecajevi (naziv) values
 -- 2
 ('Majstorska klasa kinematografije dronom'),
@@ -111,43 +110,43 @@ insert into tecajevi (naziv) values
 
 insert into piloti (ime,prezime,email) values
 -- 1
-('Filip','JanjeÅ¡iÄ‡','filip.janjesic@gmail.com'),
+('Filip','Janješiæ','filip.janjesic@gmail.com'),
 -- 2
 ('Shaquille', 'O''Neal','shaki.oneal@gmail.com');
 
 
 
 insert into kandidati (prezime,ime,email) values
-('BoÅ¾iÄ‡','Petra','bozic.petra35@gmail.com'),
-('FarkaÅ¡','Dominik','sinisartf13@gmail.com'),
-('GlavaÅ¡','Natalija','natalija-glavas@hotmail.com'),
-('JaniÄ‡','Miroslav','miroslav.janic@gmail.com'),
-('JanjeÅ¡iÄ‡','Filip','filip.janjesic@gmail.com'),
-('JoviÄ‡','NataÅ¡a','natasajovic238@gmail.com'),
-('BariÄ‡','Luka','lukabaric15@gmail.com'),
+('Boiæ','Petra','bozic.petra35@gmail.com'),
+('Farkaš','Dominik','sinisartf13@gmail.com'),
+('Glavaš','Natalija','natalija-glavas@hotmail.com'),
+('Janiæ','Miroslav','miroslav.janic@gmail.com'),
+('Janješiæ','Filip','filip.janjesic@gmail.com'),
+('Joviæ','Nataša','natasajovic238@gmail.com'),
+('Bariæ','Luka','lukabaric15@gmail.com'),
 ('Kelava','Antonio','kelava.antonio392@gmail.com'),
-('KeÅ¡inoviÄ‡','Marijan','kesinovic957@gmail.com'),
+('Kešinoviæ','Marijan','kesinovic957@gmail.com'),
 ('Leninger','Ivan','ileninger@live.com'),
 ('Macanga','Antonio','macanga.antonio@gmail.com'),
-('MiloloÅ¾a','Antonio','milolozaantonio@yahoo.com'),
-('PavkoviÄ‡','Matija','matijapavkovic74@gmail.com'),
+('Miloloa','Antonio','milolozaantonio@yahoo.com'),
+('Pavkoviæ','Matija','matijapavkovic74@gmail.com'),
 ('Peterfaj','Karlo','karlo.peterfaj@gmail.com'),
-('PleÄaÅ¡','Adriana','adriana.plecas@gmail.com'),
-('SenÄiÄ‡','Ivan','ivan.sencic2000@gmail.com'),
-('Å uler','Zvonimir','zvonimir.suler@gmail.com'),
-('TurÄek','Mario','mario.turcek@gmail.com'),
+('Pleèaš','Adriana','adriana.plecas@gmail.com'),
+('Senèiæ','Ivan','ivan.sencic2000@gmail.com'),
+('Šuler','Zvonimir','zvonimir.suler@gmail.com'),
+('Turèek','Mario','mario.turcek@gmail.com'),
 ('Veseli','Domagoj','dveseli555@gmail.com'),
-('VukoviÄ‡','Kristijan','alanford700@gmail.com'),
-('VukuÅ¡iÄ‡','Ivan','ivukusic27@gmail.com'),
-('Å½ariÄ‡','Roman','roman.zaric@gmail.com'),
-('PavloviÄ‡','Ivan','ipavlovic6437@gmail.com'),
-('Å½upaniÄ‡','Andrea','andrea.zupanic10@gmail.com'),
-('Å½upaniÄ‡','Tomislav','tomislav.zupanic333@gmail.com'),
+('Vukoviæ','Kristijan','alanford700@gmail.com'),
+('Vukušiæ','Ivan','ivukusic27@gmail.com'),
+('ariæ','Roman','roman.zaric@gmail.com'),
+('Pavloviæ','Ivan','ipavlovic6437@gmail.com'),
+('upaniæ','Andrea','andrea.zupanic10@gmail.com'),
+('upaniæ','Tomislav','tomislav.zupanic333@gmail.com'),
 ('Petak','Martina','petak.martina@gmail.com'),
 ('Perak','Marko','markoperak469@gmail.com'),
-('MokriÅ¡','Bartol','bartol567@gmail.com'),
-('JulariÄ‡','Ljubomir','ljubojularic93@gmail.com'),
-('Ä†eliÄ‡','Ivor','ivorcelic@gmail.com');
+('Mokriš','Bartol','bartol567@gmail.com'),
+('Julariæ','Ljubomir','ljubojularic93@gmail.com'),
+('Æeliæ','Ivor','ivorcelic@gmail.com');
 
 
 
@@ -172,5 +171,3 @@ insert into clanovi (grupa,kandidat) values
 
 insert into clanovi (grupa,kandidat) values
 (3,5),(3,10),(3,12),(3,13);
-
-
