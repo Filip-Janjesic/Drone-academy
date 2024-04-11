@@ -1,6 +1,6 @@
 ﻿namespace Drone_academy.Models
 {
-    public class Class2
+    public class Tecaj
     {
     }
 }

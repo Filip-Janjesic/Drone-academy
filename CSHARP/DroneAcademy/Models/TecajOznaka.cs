@@ -1,6 +1,6 @@
 ﻿namespace Drone_academy.Models
 {
-    public class Class3
+    public class TecajOznaka
     {
     }
 }

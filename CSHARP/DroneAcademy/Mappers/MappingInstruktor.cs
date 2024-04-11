@@ -1,6 +1,6 @@
 ﻿namespace Drone_academy.Mappers
 {
-    public class Class2
+    public class MappingInstruktor
     {
     }
 }

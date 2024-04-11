@@ -1,6 +1,6 @@
 ﻿namespace Drone_academy.Models
 {
-    public class Class4
+    public class Osoba
     {
     }
 }
