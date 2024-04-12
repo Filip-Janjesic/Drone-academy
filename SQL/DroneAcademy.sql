@@ -41,8 +41,7 @@ sifra int not null primary key identity(1,1),
 naziv varchar(60) not null,
 brojsati int,
 cijena decimal(18,2),
-upisnina decimal(18,2),
-verificiran bit
+upisnina decimal(18,2)
 );
 
 
