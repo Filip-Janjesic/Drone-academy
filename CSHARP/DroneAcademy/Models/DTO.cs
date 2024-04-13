@@ -1,5 +1,5 @@
 ﻿using Drone_academy.Validations;
-using EdunovaAPP.Validations;
+using Drone_academy.Validations;
 using System.ComponentModel.DataAnnotations;
 
 
