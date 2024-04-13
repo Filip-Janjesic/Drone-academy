@@ -6,7 +6,7 @@ namespace Drone_academy.Models
     {
         public string? Naziv { get; set; }
 
-        [ForeignKey("instruktor")] // ovo pod navodnicima je naziv kolone u tablici grupa
+        [ForeignKey("instruktor")]
         public Instruktor? Instruktor { get; set; }
 
         [ForeignKey("tecaj")]
@@ -16,6 +16,6 @@ namespace Drone_academy.Models
 
         public DateTime? DatumPocetka { get; set; }
 
-        public List<Kandidat>? Polaznici { get; set; }
+        public List<Kandidat>? Kandidati { get; set; }
     }
 }
