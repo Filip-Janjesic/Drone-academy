@@ -59,7 +59,7 @@ namespace Drone_academy.Models
         int? instruktorSifra,
         DateTime? datumpocetka,
         [Range(0, 30, ErrorMessage = "{0} mora biti između {1} i {2}")]
-        int? maksimalnkandidata= 0);
+        int? maksimalnokandidata= 0);
 
     public record OznakaDTORead(int sifra, string? naziv);
 
