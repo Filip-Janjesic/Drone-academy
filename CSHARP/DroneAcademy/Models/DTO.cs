@@ -1,5 +1,4 @@
 ﻿using Drone_academy.Validations;
-using Drone_academy.Validations;
 using System.ComponentModel.DataAnnotations;
 
 
