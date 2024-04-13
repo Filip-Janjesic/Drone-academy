@@ -37,7 +37,7 @@ namespace Drone_academy.Data
                 .HasMany(g => g.Kandidati)
                 .WithMany(p => p.Grupe)
                 .UsingEntity<Dictionary<string, object>>("clanovi",
-                c => c.HasOne<Kandidati>().WithMany().HasForeignKey("polaznik"),
+                c => c.HasOne<Kandidat>().WithMany().HasForeignKey("kandidat"),
                 c => c.HasOne<Grupa>().WithMany().HasForeignKey("grupa"),
                 c => c.ToTable("clanovi")
                 );
