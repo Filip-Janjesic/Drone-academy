@@ -1,14 +1,13 @@
 ﻿using Drone_academy.Data;
 using Drone_academy.Models;
+using Drone_academy.Mappers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
+using System.Text;
 
 namespace Drone_academy.Controllers
 {
-    public class DroneAcademyController : Controller
-    {
         [Authorize]
         public abstract class DroneAcademyController<T, TDR, TDI> : ControllerBase where T : Entitet
         {
@@ -161,8 +160,5 @@ namespace Drone_academy.Controllers
                 return _mapper.MapInsertUpdatedFromDTO(dto);
             }
 
-
-
         }
     }
-}
