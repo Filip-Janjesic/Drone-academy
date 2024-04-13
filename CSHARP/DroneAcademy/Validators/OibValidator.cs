@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 
-namespace EdunovaAPP.Validations
+namespace Drone_academy.Validations
 {
     public class OibValidator : ValidationAttribute
     {
