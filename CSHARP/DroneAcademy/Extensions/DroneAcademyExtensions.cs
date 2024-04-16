@@ -8,7 +8,7 @@ namespace Drone_academy.Extensions
     public static class DroneAcademyExtensions
     {
 
-        public static void AddEdunovaSwaggerGen(this IServiceCollection Services)
+        public static void AddDroneAcademySwaggerGen(this IServiceCollection Services)
         {
 
             Services.AddSwaggerGen(sgo =>
@@ -69,7 +69,7 @@ namespace Drone_academy.Extensions
 
         }
 
-        public static void AddEdunovaCORS(this IServiceCollection Services)
+        public static void AddDroneAcademyCORS(this IServiceCollection Services)
         {
 
             Services.AddCors(opcije =>
