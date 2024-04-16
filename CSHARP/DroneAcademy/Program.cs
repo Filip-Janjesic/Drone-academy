@@ -11,7 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddEdunovaSwaggerGen();
 builder.Services.AddEdunovaCORS();
-builder.Services.AddDbContext<DroneAcademyContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString(name: "EdunovaContext")));
+builder.Services.AddDbContext<DroneAcademyContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString(name: "DroneAcademyExtensions")));
 builder.Services.AddAuthentication(x => {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
