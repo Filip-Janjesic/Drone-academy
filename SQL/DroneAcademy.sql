@@ -24,6 +24,8 @@ GO
 SELECT name, collation_name FROM sys.databases;
 GO
 
+
+
 create table operateri(
 sifra int not null primary key identity(1,1),
 email varchar(50) not null,
@@ -32,7 +34,7 @@ lozinka varchar(200) not null
 
 -- Lozinka droneacademy generirana pomoæu https://bcrypt-generator.com/
 insert into operateri values ('droneacademy@droneacademy.hr',
-'$2a$12$u9OiBM0twMXEwIm29KWSieOBGX7Ea.feXKBOBKZI2g.L/VhW3LJSa');
+'$2a$12$gDhnZn2akSVwZ8SFeptV9Odxu7gRR1fJT7vTXbSFlyGgyX/.CZu9G');
 
 
 
@@ -99,8 +101,8 @@ alter table clanovi add foreign key (kandidat) references kandidati(sifra);
 alter table tecajevioznake add foreign key (tecaj) references tecajevi(sifra);
 alter table tecajevioznake add foreign key (oznaka) references oznake(sifra);
 -- 1
-insert into tecajevi (naziv,brojsati,cijena,upisnina,verificiran)
-values ('Infracrveni temeljni teèaj',225,1325.85,null,1);
+insert into tecajevi (naziv,brojsati,cijena,upisnina)
+values ('Infracrveni temeljni teèaj',225,1325.85,null);
 insert into tecajevi (naziv) values
 -- 2
 ('Majstorska klasa kinematografije dronom'),
