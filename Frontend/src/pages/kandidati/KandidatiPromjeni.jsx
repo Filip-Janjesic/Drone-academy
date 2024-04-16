@@ -8,7 +8,7 @@ import InputText from '../../components/InputText';
 import Akcije from '../../components/Akcije';
 import Cropper from 'react-cropper';
 import 'cropperjs/dist/cropper.css';
-import nepoznato from '../../assets/nepoznato.png'; 
+import drone from '../../assets/drone.png'; 
 import useLoading from '../../hooks/useLoading';
 import useError from '../../hooks/useError';
 
@@ -38,7 +38,7 @@ export default function KandidatiPromjeni() {
     if(odgovor.podaci.slika!=null){
       setTrenutnaSlika(App.URL + odgovor.podaci.slika + `?${Date.now()}`);
     }else{
-      setTrenutnaSlika(nepoznato);
+      setTrenutnaSlika(drone);
     }
     hideLoading();
   }
