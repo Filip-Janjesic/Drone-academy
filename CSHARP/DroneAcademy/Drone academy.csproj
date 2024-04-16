@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\assests\**" />
+    <Content Remove="wwwroot\assests\**" />
+    <EmbeddedResource Remove="wwwroot\assests\**" />
+    <None Remove="wwwroot\assests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="BCrypt.Net" Version="0.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.16" />
@@ -19,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\assests\" />
+    <Folder Include="wwwroot\assets\" />
   </ItemGroup>
 
 </Project>

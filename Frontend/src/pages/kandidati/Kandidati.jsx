@@ -5,7 +5,7 @@ import { IoIosAdd } from "react-icons/io";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { App, RoutesNames } from "../../constants";
-import nepoznato from '../../assets/nepoznato.png'; 
+import drone from '../../assets/drone.png'; 
 import useError from "../../hooks/useError";
 import useLoading from "../../hooks/useLoading";
 
@@ -53,7 +53,7 @@ export default function Kandidati(){
         if(kandidat.slika!=null){
             return App.URL + kandidat.slika+ `?${Date.now()}`;
         }
-        return nepoznato;
+        return drone;
     }
 
     function promjeniUvjet(e) {
