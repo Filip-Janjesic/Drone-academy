@@ -24,14 +24,14 @@ export default function Login() {
           <Form.Control
             type='text'
             name='email'
-            placeholder='filip.janjesic@gmail.com'
+            placeholder='droneacademy@droneacademy.hr'
             maxLength={255}
             required
           />
         </Form.Group>
         <Form.Group className='mb-3' controlId='lozinka'>
           <Form.Label>Lozinka</Form.Label>
-          <Form.Control type='password' name='lozinka' required />
+          <Form.Control type='password' name='lozinka' required placeholder='droneacademy' />
         </Form.Group>
         <Button variant='primary' className='gumb' type='submit'>
           Autoriziraj
