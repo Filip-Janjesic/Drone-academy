@@ -20,7 +20,7 @@ export default function Login() {
     <Container className='mt-4'>
       <Form onSubmit={handleSubmit}>
         <Form.Group className='mb-3' controlId='email'>
-          <Form.Label>Email</Form.Label>
+          <Form.Label>Email - droneacademy@droneacademy.hr</Form.Label>
           <Form.Control
             type='text'
             name='email'
@@ -30,7 +30,7 @@ export default function Login() {
           />
         </Form.Group>
         <Form.Group className='mb-3' controlId='lozinka'>
-          <Form.Label>Lozinka</Form.Label>
+          <Form.Label>Lozinka - droneacademy</Form.Label>
           <Form.Control type='password' name='lozinka' required placeholder='droneacademy' />
         </Form.Group>
         <Button variant='primary' className='gumb' type='submit'>
