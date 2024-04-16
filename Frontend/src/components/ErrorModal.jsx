@@ -28,4 +28,3 @@ ErrorModal.propTypes = {
   onHide: PropTypes.func.isRequired,
   errors: PropTypes.array,
 };
-

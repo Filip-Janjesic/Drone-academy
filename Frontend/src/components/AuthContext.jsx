@@ -1,54 +1,21 @@
-import { createContext, useEffect, useState } from 'react';
-import { logInService } from '../services/authService';
-import { useNavigate } from 'react-router-dom';
-import { RoutesNames } from '../constants';
-import useError from '../hooks/useError';
-import useLoading from '../hooks/useLoading';
+import { createContext, useState } from 'react';
 
 export const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [authToken, setAuthToken] = useState('');
-  const { showLoading, hideLoading } = useLoading();
 
-  const { prikaziError } = useError();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const token = localStorage.getItem('Bearer');
-
-    if (token) {
-      setAuthToken(token);
-      setIsLoggedIn(true);
-    } else {
-      navigate(RoutesNames.HOME);
-    }
-  }, []);
-
-  async function login(userData) {
-    showLoading();
-    const odgovor = await logInService(userData);
-    hideLoading();
-    if (odgovor.ok) {
-      localStorage.setItem('Bearer', odgovor.podaci);
-      setAuthToken(odgovor.podaci);
-      setIsLoggedIn(true);
-      navigate(RoutesNames.NADZORNA_PLOCA);
-    } else {
-      console.log()
-      prikaziError(odgovor.podaci);
-      localStorage.setItem('Bearer', '');
-      setAuthToken('');
-      setIsLoggedIn(false);
-    }
+  function login() {
+    // Simulate login without actual authentication
+    setIsLoggedIn(true);
+    setAuthToken('dummyAuthToken');
   }
 
   function logout() {
-    localStorage.setItem('Bearer', '');
-    setAuthToken('');
+    // Simulate logout
     setIsLoggedIn(false);
-    navigate(RoutesNames.HOME);
+    setAuthToken('');
   }
 
   const value = {

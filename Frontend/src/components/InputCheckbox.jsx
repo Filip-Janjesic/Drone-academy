@@ -18,4 +18,3 @@ InputCheckbox.propTypes = {
     atribut: PropTypes.string.isRequired,
     vrijednost: PropTypes.bool,
 };
-
