@@ -30,7 +30,6 @@ import NadzornaPloca from "./pages/NadzornaPloca"
 
 function App() {
   const { errors, prikaziErrorModal, sakrijError } = useError();
-  const { isLoggedIn } = useAuth();
   return (
     <>
       <LoadingSpinner />
