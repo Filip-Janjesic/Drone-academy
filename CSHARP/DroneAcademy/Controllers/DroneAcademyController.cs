@@ -1,14 +1,13 @@
 ﻿using Drone_academy.Data;
 using Drone_academy.Models;
 using Drone_academy.Mappers;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
 
 namespace Drone_academy.Controllers
 {
-        [Authorize]
+        
         public abstract class DroneAcademyController<T, TDR, TDI> : ControllerBase where T : Entitet
         {
             protected DbSet<T> DbSet;
