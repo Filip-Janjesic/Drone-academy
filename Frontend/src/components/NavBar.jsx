@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { RoutesNames, App } from '../constants';
 
 import './NavBar.css';
-import useAuth from '../hooks/useAuth';
+
 
 function NavBar() {
 
