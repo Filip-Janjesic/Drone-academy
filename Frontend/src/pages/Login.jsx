@@ -1,19 +1,19 @@
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import useAuth from '../hooks/useAuth';
 
 export default function Login() {
-  const { login } = useAuth();
-
   function handleSubmit(e) {
     e.preventDefault();
 
-    const podaci = new FormData(e.target);
-    login({
-      email: podaci.get('email'),
-      password: podaci.get('lozinka'),
-    });
+    // Simulate form submission without authentication
+    const formData = new FormData(e.target);
+    const email = formData.get('email');
+    const password = formData.get('lozinka');
+    console.log('Email:', email);
+    console.log('Password:', password);
+
+    // You can add your own logic here for handling form submission
   }
 
   return (
