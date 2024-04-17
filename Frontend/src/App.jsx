@@ -26,7 +26,6 @@ import useError from "./hooks/useError"
 import Oznake from "./pages/oznake/Oznake"
 import LoadingSpinner from "./components/LoadingSpinner"
 import Login from "./pages/Login"
-import useAuth from "./hooks/useAuth"
 import NadzornaPloca from "./pages/NadzornaPloca"
 
 function App() {
