@@ -1,4 +1,7 @@
 import axios from "axios";
+import {AxiosError} from 'axios';
+import { App } from "../constants";
+
 
 export const httpService = axios.create({
     baseURL: App.URL + '/api/v1', // Removed App.URL https://localhost:7280/
