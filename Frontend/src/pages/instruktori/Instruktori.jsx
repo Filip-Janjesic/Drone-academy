@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import useError from "../../hooks/useError";
 
 export default function Instruktori(){
-    const [Instruktori,setInstruktori] = useState();
+    const [instruktori,setInstruktori] = useState();
     let navigate = useNavigate(); 
     const { prikaziError } = useError();
     const [prikaziModal, setPrikaziModal] = useState(false);
@@ -85,7 +85,7 @@ export default function Instruktori(){
                     </tr>
                 </thead>
                 <tbody>
-                    {Instruktori && Instruktori.map((instruktor,index)=>(
+                    {instruktori && instruktori.map((instruktor,index)=>(
                         <tr key={index}>
                             <td>{instruktor.ime}</td>
                             <td>{instruktor.prezime}</td>

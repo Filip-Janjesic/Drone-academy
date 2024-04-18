@@ -37,8 +37,7 @@ function App() {
       <NavBar />
       <Routes>
       <Route path={RoutesNames.HOME} element={<Pocetna />} />
-      {isLoggedIn ? (
-        <>
+
           
           <Route path={RoutesNames.NADZORNA_PLOCA} element={<NadzornaPloca />} />
           <Route path={RoutesNames.OZNAKE_PREGLED} element={<Oznake />} />
@@ -59,12 +58,7 @@ function App() {
           <Route path={RoutesNames.GRUPE_PREGLED} element={<Grupe />} />
           <Route path={RoutesNames.GRUPE_NOVI} element={<GrupeDodaj />} />
           <Route path={RoutesNames.GRUPE_PROMJENI} element={<GrupePromjeni />} />
-        </>
-        ) : (
-          <>
-            <Route path={RoutesNames.LOGIN} element={<Login />} />
-          </>
-        )}
+
       </Routes>
     </>
   )
