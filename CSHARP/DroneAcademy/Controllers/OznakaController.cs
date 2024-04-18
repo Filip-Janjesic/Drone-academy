@@ -7,6 +7,8 @@ using System.Text;
 
 namespace Drone_academy.Controllers
 {
+    [ApiController]
+    [Route("api/v1/[controller]")]
     public class OznakaController : DroneAcademyController<Oznaka, OznakaDTORead, OznakaDTOInsertUpdate>
     {
 
