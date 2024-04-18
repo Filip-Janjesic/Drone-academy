@@ -36,14 +36,14 @@ upisnina decimal(18,2)
 create table grupe(
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
-pilot int,
+instruktor int,
 tecaj int not null,
 maksimalnokandidata int,
 datumpocetka datetime
 );
 
 
-create table piloti(
+create table instruktori(
 sifra int not null primary key identity(1,1),
 ime varchar(50) not null,
 prezime varchar(50) not null,
@@ -81,7 +81,7 @@ napomena varchar(50)
 );
 
 alter table grupe add foreign key (tecaj) references tecajevi(sifra);
-alter table grupe add foreign key (pilot) references piloti(sifra);
+alter table grupe add foreign key (instruktor) references instruktori(sifra);
 alter table clanovi add foreign key (grupa) references grupe(sifra);
 alter table clanovi add foreign key (kandidat) references kandidati(sifra);
 alter table tecajevioznake add foreign key (tecaj) references tecajevi(sifra);
@@ -95,7 +95,7 @@ insert into tecajevi (naziv) values
 -- 3
 ('Uvodna obuka letenja');
 
-insert into piloti (ime,prezime,email) values
+insert into instruktori (ime,prezime,email) values
 -- 1
 ('Filip','Janješiæ','filip.janjesic@gmail.com'),
 -- 2
@@ -137,7 +137,7 @@ insert into kandidati (prezime,ime,email) values
 
 
 
-insert into grupe (naziv,tecaj,datumpocetka,maksimalnokandidata,pilot) values
+insert into grupe (naziv,tecaj,datumpocetka,maksimalnokandidata,instruktor) values
 -- 1
 ('ITT',1,'2024-04-24 17:00:00',15,1),
 -- 2
