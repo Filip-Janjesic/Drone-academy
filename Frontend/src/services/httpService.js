@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const httpService = axios.create({
-    baseURL: '/api/v1', // Removed App.URL
+    baseURL: 'http://filipjanjesic1-001-site1.anytempurl.com/', // Removed App.URL
     headers: {
         'Content-Type': 'application/json'
     }
