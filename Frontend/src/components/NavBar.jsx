@@ -57,6 +57,12 @@ function NavBar() {
                   </NavDropdown.Item>
                 </NavDropdown>
                 
+                <Navbar.Collapse className="justify-content-end">
+                <Nav>
+                  <Nav.Link target="_blank" href={App.URL + '/swagger/index.html'}>API dokumentacija</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+
               </Nav>
             </Navbar.Collapse>
 
