@@ -27,5 +27,5 @@ export const RoutesNames = {
 
 export const App = {
     URL: 'http://filipjanjesic1-001-site1.anytempurl.com/',
-    DEV: false
+    DEV: true
 };
